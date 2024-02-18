@@ -300,14 +300,8 @@ header .navbar ul li a:hover{
 .social-icons a.github:hover {
   background-color:#0685da
 }
-.social-icons a.twitter:hover {
-  background-color:#00aced
-}
 .social-icons a.linkedin:hover {
   background-color:#007bb6
-}
-.social-icons a.dev:hover {
-    background-color:#070707
 }
 .social-icons a.instagram:hover {
     background-color:#0685da
@@ -450,7 +444,7 @@ header .navbar ul li a:hover{
 
 /* skills section starts */
 .skills {
-  min-height: 90vh;
+  min-height: 20vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 .skills h2 {

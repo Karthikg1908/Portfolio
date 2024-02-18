@@ -64,8 +64,6 @@
 </header>
 <!-- navbar ends -->
 
-<!-- hero section starts -->
-<!-- hero section starts -->
 <section class="home" id="home">
   
 
@@ -88,12 +86,7 @@
   <img draggable="false" class="tilt" src="./assests/images/hero.gif" alt="">
 </div>
 </section>
-<!-- hero section ends -->
 
-<!-- hero section ends -->
-
-
-<!-- about section starts -->
 <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
     
@@ -104,7 +97,7 @@
     </div>
     <div class="content">
         <h3>I'm Karthik</h3>
-        <span class="tag">Passionate Web Developer| Coding Enthusiast </span>
+        <span class="tag">Passionate Frontend Web Developer</span>
         <p>
           I'm currently in my third year of Computer Science and Engineering at East West Institute of Technology.
           </p>
@@ -131,78 +124,207 @@
 </section>
 <!-- about section ends -->
 
-<!-- skills section starts -->
-<section class="skills" id="skills" style="font-family: Arial, sans-serif; padding: 20px;">
+<section class="skills" id="skills">
+  <style>
+  .skills {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
 
-  <h2 class="heading" style="text-align: center; font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-laptop-code"></i> Skills & <span style="color: #007bff;">Abilities</span></h2>
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .bar:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .info span {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .line {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  /* Color classes for icons */
+  .html-logo { color: #E44D26; }
+  .css-logo { color: #1572B6; }
+  .javascript-logo { color: #F7DF1E; }
+  .php-logo { color: #8892BE; }
+  .java-logo { color: #007396; }
+  .python-logo { color: #3776AB; }
+  .mysql-logo { color: #4479A1; }
+
+  /* Hover effects */
+  .bar:hover .html-logo { color: #FFA07A; }
+  .bar:hover .css-logo { color: #87CEEB; }
+  .bar:hover .javascript-logo { color: #FFD700; }
+  .bar:hover .php-logo { color: #B0C4DE; }
+  .bar:hover .java-logo { color: #20B2AA; }
+  .bar:hover .python-logo { color: #4682B4; }
+  .bar:hover .mysql-logo { color: #87CEFA; }
+  
+</style>
+<h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span style="color: #007bff;">Abilities</span></h2>
 
   <div class="container">
-    <div class="row" id="skillsContainer" style="display: flex; flex-direction: row; gap: 20px;">
+    <div class="row skillsContainer">
 
       <!-- Skill 1: HTML -->
-      <div class="bar" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-        <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-          <i class="fab fa-html5" style="font-size: 24px;"></i>
-          <span style="margin-right: 10px; font-weight: bold;">HTML</span>
-          <span>90%</span>
+      <div class="bar">
+        <div class="info">
+          <i class="fab fa-html5 html-logo" style="font-size: 24px;"></i>
+          <span>HTML</span>
         </div>
-        <div class="line html" style="height: 10px; background-color: #e34f26; width: 90%; border-radius: 5px; margin-top: 5px;"></div>
       </div>
 
       <!-- Skill 2: CSS -->
-      <div class="bar" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-        <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-          <i class="fab fa-css3-alt" style="font-size: 24px;"></i>
-          <span style="margin-right: 10px; font-weight: bold;">CSS</span>
-          <span>82%</span>
+      <div class="bar">
+        <div class="info">
+          <i class="fab fa-css3-alt css-logo" style="font-size: 24px;"></i>
+          <span>CSS</span>
         </div>
-        <div class="line css" style="height: 10px; background-color: #1572b6; width: 82%; border-radius: 5px; margin-top: 5px;"></div>
       </div>
 
       <!-- Skill 3: JavaScript -->
-      <div class="bar" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-        <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-          <i class="fab fa-js-square" style="font-size: 24px;"></i>
-          <span style="margin-right: 10px; font-weight: bold;">JavaScript</span>
-          <span>40%</span>
+      <div class="bar">
+        <div class="info">
+          <i class="fab fa-js-square javascript-logo" style="font-size: 24px;"></i>
+          <span>JavaScript</span>
         </div>
-        <div class="line javascript" style="height: 10px; background-color: #f7df1e; width: 40%; border-radius: 5px; margin-top: 5px;"></div>
       </div>
 
-      <!-- Skill 4: ReactJS -->
-      <div class="bar" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-        <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-          <i class="fab fa-react" style="font-size: 24px;"></i>
-          <span style="margin-right: 10px; font-weight: bold;">ReactJS</span>
-          <span>55%</span>
+      <!-- Skill 4: DBMS -->
+      <div class="bar">
+        <div class="info">
+          <i class="fas fa-database mysql-logo" style="font-size: 24px;"></i>
+          <span>DBMS</span>
         </div>
-        <div class="line reactjs" style="height: 10px; background-color: #61dbfb; width: 55%; border-radius: 5px; margin-top: 5px;"></div>
       </div>
 
-      <!-- Skill 5: Node.js -->
-      <div class="bar" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-        <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-          <i class="fab fa-node-js" style="font-size: 24px;"></i>
-          <span style="margin-right: 10px; font-weight: bold;">Node.js</span>
-          <span>70%</span>
+      <!-- Skill 5: Java -->
+      <div class="bar">
+        <div class="info">
+          <i class="fab fa-java java-logo" style="font-size: 24px;"></i>
+          <span>Java</span>
         </div>
-        <div class="line nodejs" style="height: 10px; background-color: #3c873a; width: 70%; border-radius: 5px; margin-top: 5px;"></div>
       </div>
 
-      <!-- Skill 6: PHP -->
-      <div class="bar" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-        <div class="info" style="display: flex; align-items: center; justify-content: space-between;">
-          <i class="fab fa-php" style="font-size: 24px;"></i>
-          <span style="margin-right: 10px; font-weight: bold;">PHP</span>
-          <span>65%</span>
+      <!-- Skill 6: Python -->
+      <div class="bar">
+        <div class="info">
+          <i class="fab fa-python python-logo" style="font-size: 24px;"></i>
+          <span>Python</span>
         </div>
-        <div class="line php" style="height: 10px; background-color: #8892be; width: 65%; border-radius: 5px; margin-top: 5px;"></div>
       </div>
 
+      <!-- Skill 7: MySQL -->
+      <div class="bar">
+        <div class="info">
+          <i class="fas fa-database mysql-logo" style="font-size: 24px;"></i>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <!-- Skill 8: Data Structures -->
+      <div class="bar">
+        <div class="info">
+          <i class="fas fa-cubes" style="font-size: 24px;"></i>
+          <span>Data Structures</span>
+        </div>
+      </div>
     </div>
   </div>
+<br><br>
+  <section class="skills" id="personal-skills" style="font-family: Arial, sans-serif; padding: 20px;">
+    <!-- Personal Skills -->
+    <h2 class="heading" style="text-align: center; font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-user"></i> Personal Skills</h2>
+    <div class="container">
+        <div class="row personalSkillsContainer" style="display: flex; flex-direction: row; gap: 20px;">
+            <!-- Personal Skill: Communication -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="fas fa-comments" style="font-size: 24px; color: #007bff;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Communication</span>
+                </div>
+            </div>
+            <!-- Personal Skill: Teamwork -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="fas fa-users" style="font-size: 24px; color: #28a745;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Teamwork</span>
+                </div>
+            </div>
+            <!-- Personal Skill: Problem Solving -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="fas fa-puzzle-piece" style="font-size: 24px; color: #dc3545;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Problem Solving</span>
+                </div>
+            </div>
+            <!-- Personal Skill: Time Management -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="fas fa-clock" style="font-size: 24px; color: #ffc107;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Time Management</span>
+                </div>
+            </div>
+            <!-- Personal Skill: Positive Attitude -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="far fa-smile" style="font-size: 24px; color: #17a2b8;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Positive Attitude</span>
+                </div>
+            </div>
+            <!-- Personal Skill: Leadership -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="fas fa-users" style="font-size: 24px; color: #6610f2;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Leadership</span>
+                </div>
+            </div>
+            <!-- Personal Skill: Critical Thinking -->
+            <div class="bar" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <div class="info">
+                    <i class="fas fa-brain" style="font-size: 24px; color: #28a745;"></i>
+                    <span style="margin-right: 10px; font-weight: bold;">Critical Thinking</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 </section>
+
 <!-- education section starts -->
 <section class="education" id="education">
 
@@ -264,10 +386,6 @@
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
   <div class="box-container">
-
-    
-
-
     <div class="box tilt">
       <img draggable="false" src="./assests/images/projects/vtu.jpg" alt="" />
       <div class="content">
@@ -283,9 +401,6 @@
         </div>
       </div>
     </div>
-    
-    
-    
     
     <div class="box tilt">
       <img draggable="false" src="./assests/images/projects/digital.jpg" alt="" />
@@ -319,8 +434,6 @@
         </div>
       </div>
     </div>
-    
-
    
     <div class="box tilt">
       <img draggable="false" src="./assests/images/projects/student.png" alt="" />
@@ -353,10 +466,7 @@
           </div>
         </div>
       </div>
-    </div>  
-    
-    
-    
+    </div> 
 
 <div class="viewall">
   <a href="./projects/index.html" class="btn"><span>View All</span>
@@ -510,10 +620,7 @@
               <a href="https://www.linkedin.com/in/karthik-g-04b016210/" class="fab fa-linkedin" target="_blank"></a>
               <a href="https://github.com/Karthikg1908" class="fab fa-github" target="_blank"></a>
               <a href="mailto:karthikgr1908@gmail.com" class="fas fa-envelope" target="_blank"></a>
-
-              
               <a href="https://www.instagram.com/it_s_me.19/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fab fa-instagram" target="_blank"></a>
-              
           </div>
       </div>
   </div>
