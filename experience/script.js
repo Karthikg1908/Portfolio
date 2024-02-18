@@ -67,8 +67,8 @@ document.onkeydown = function(e) {
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Experience | Portfolio Karthik G";
-        $("#favicon").attr("href","/assests/images/favicon.png");
+        document.title = "Experience | Portfolio Karthi";
+        $("#favicon").attr("href","/assests/images/profile.jpeg");
     }
     else {
         document.title = "Come Back To Portfolio";

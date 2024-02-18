@@ -20,8 +20,8 @@ $(document).ready(function(){
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Projects | Portfolio  Karthik G";
-        $("#favicon").attr("href","/assests/images/favicon.png");
+        document.title = "Projects | Portfolio  Karthi";
+        $("#favicon").attr("href","/assests/images/profile.jpeg");
     }
     else {
         document.title = "Come Back To Portfolio";
