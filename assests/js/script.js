@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Front End Devloper", "Web Design","Front End Devloper"],
+        strings: ["Front End Devloper", "Back End Devloper", "Web Design"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
@@ -96,6 +96,7 @@ document.onkeydown = function(e) {
      return false;
   }
 }
+
 
 async function fetchData(type = "skills") {
     let response
