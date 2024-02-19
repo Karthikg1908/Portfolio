@@ -326,8 +326,6 @@ header .navbar ul li a:hover{
     font-size: 2.2rem;
   }
 }
-/* hero media queries ends*/
-/* hero section end */
 
 /* about section starts */
 .about {
@@ -438,10 +436,7 @@ header .navbar ul li a:hover{
     gap: 0;
   }
 }
-
 /* about section ends */
-
-
 /* skills section starts */
 .skills {
   min-height: 20vh;
@@ -513,7 +508,6 @@ header .navbar ul li a:hover{
     width: 100%;
   }
 }
-
 /* education section starts */
 .education{
   background: #e5ecfb;
@@ -619,7 +613,6 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
   }
 }
-
 /* work section starts */
 .work{
   /* background: #010124; */
@@ -739,8 +732,6 @@ header .navbar ul li a:hover{
   transform: translateX(5px);
 }
 /* work section ends */
-
-
 /* experience section starts */
 .experience .timeline {
   position: relative;
@@ -1062,7 +1053,6 @@ form .button-area{
     margin-right: 2rem;
   }
 }
-
 /* footer section starts */
 .footer{
   min-height: auto;
@@ -1181,7 +1171,6 @@ form .button-area{
   }
 }
 /* common media queries ends*/
-
 
 /* scroll top starts */
 #scroll-top{

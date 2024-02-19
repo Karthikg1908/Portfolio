@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('#menu').click(function(){
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -14,7 +13,6 @@ $(document).ready(function(){
         }else{
             document.querySelector('#scroll-top').classList.remove('active');
         }
-
         // scroll spy
         $('section').each(function(){
             let height = $(this).height();
@@ -49,7 +47,6 @@ function(){
         
     }
 });
-
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
@@ -97,7 +94,6 @@ document.onkeydown = function(e) {
   }
 }
 
-
 async function fetchData(type = "skills") {
     let response
     type === "skills" ?
@@ -128,19 +124,17 @@ fetchData().then(data => {
 });
 
 $("#contact-form").submit(function (event) {
-    //event.preventdefault();
-    
     event.preventDefault();
-    emailjs.init("3EvNyKZKcMLcyTKQN");
+    emailjs.init("7RMYoySotlE_JuE2o");
     console.log("form submitted");
-    emailjs.sendForm('service_xol5sv7', 'template_133u14v', '#contact-form')
+    emailjs.sendForm('service_awy3o8i', 'template_6um0p7i', '#contact-form')
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             document.getElementById("contact-form").reset();
-            alert("Form Submitted Successfully");
+            alert("Your message has been successfully sent. Thank you for reaching out. I'll respond to you shortly.");
         }, function (error) {
             console.log('FAILED...', error);
-            alert("Form Submission Failed! Try Again");
+            alert("Oops! Something went wrong while submitting the form. Please try again later.");
         });
     
 });
@@ -160,13 +154,8 @@ srtop.reveal('.home .content .btn',{delay: 200});
 
 srtop.reveal('.home .image',{delay: 400}); 
 srtop.reveal('.home .linkedin',{interval: 600}); 
-srtop.reveal('.home .github',{interval: 800}); 
-srtop.reveal('.home .twitter',{interval: 1000});
-srtop.reveal('.home .telegram',{interval: 600}); 
+srtop.reveal('.home .github',{interval: 800});
 srtop.reveal('.home .instagram',{interval: 600}); 
-srtop.reveal('.home .dev',{interval: 600}); 
-
-
 
 /* SCROLL ABOUT */
 srtop.reveal('.about .content h3',{delay: 300});
