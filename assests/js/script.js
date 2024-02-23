@@ -127,7 +127,7 @@ $("#contact-form").submit(function (event) {
     event.preventDefault();
     emailjs.init("7RMYoySotlE_JuE2o");
     console.log("form submitted");
-    emailjs.sendForm('service_awy3o8i', 'template_6um0p7i', '#contact-form')
+    emailjs.sendForm('service_zi75ksj', 'template_6um0p7i', '#contact-form')
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             document.getElementById("contact-form").reset();
