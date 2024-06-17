@@ -50,9 +50,9 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Front End Devloper", "Web Design","Full Stack Devloper"],
+        strings: ["Front End Devloper", "Web Design","Full Stack Devloper","Front End Devloper"],
         loop: true,
-        typeSpeed: 50,
+        typeSpeed: 100,
 		backSpeed: 25,
 		backDelay: 500,
       });
