@@ -40,7 +40,7 @@ document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
         document.title = "Portfolio | Karthi";
-        $("#favicon").attr("href","assests/images/profile.jpeg");
+        $("#favicon").attr("href","assests/images/me.png");
     }
     else {
         document.title = "Come Back To Portfolio";

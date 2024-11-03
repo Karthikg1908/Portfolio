@@ -437,6 +437,7 @@ header .navbar ul li a:hover{
   }
 }
 /* about section ends */
+
 /* skills section starts */
 .skills {
   min-height: 20vh;
@@ -1188,3 +1189,78 @@ form .button-area{
 #scroll-top.active{
   top: calc(100% - 12rem);
 }
+
+.tr:hover {
+    background-color: #e2e6ea;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.courses {
+    font-family: 'Times New Roman', serif;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.heading span {
+    color: #007bff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    background-color: #f1f1f1;
+}
+
+th {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+td {
+    padding: 15px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #ccc;
+}
+
+td a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+td a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
