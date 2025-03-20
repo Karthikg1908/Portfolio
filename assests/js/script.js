@@ -125,7 +125,7 @@ fetchData().then(data => {
 
 $("#contact-form").submit(function (event) {
     event.preventDefault();
-    emailjs.init("7RMYoySotlE_JuE2o");
+    emailjs.init("Ys-JDx_diIdvjLBfb");
     console.log("form submitted");
     emailjs.sendForm('service_zi75ksj', 'template_6um0p7i', '#contact-form')
         .then(function (response) {
@@ -182,3 +182,30 @@ srtop.reveal('.experience .timeline .container',{interval: 400});
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container',{delay: 400});
 srtop.reveal('.contact .container .form-group',{delay: 400});
+
+const viewBtn = document.querySelector('.view-btn');
+const modal = document.getElementById('modal');
+const closeBtn = document.querySelector('.close-btn');
+
+viewBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close the modal when the user clicks outside the modal content
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+
+function openModal(certificateId) {
+      document.getElementById(certificateId).style.display = 'block';
+    }
+
+    function closeModal(certificateId) {
+      document.getElementById(certificateId).style.display = 'none';
+    }

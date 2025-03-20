@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='favicon' rel="shortcut icon" href="/assests/images/favicon.png" type="image/x-png">
+    <title>Projects | Karthik G</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform:capitalize;
+  transition: all .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body{
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+  background: #2b3dda;
+  color: #fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb{
+  background: #420177;
+}
+
+/* navbar starts */
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146,161,176,.3);
+}
+section{
+  min-height: 100vh;
+  padding: 2rem 9%;
+}
+.heading{
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span{
+  color: rgb(115, 3, 167);
+}
+header .logo{
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0E2431;
+}
+header .logo i {
+  font-size: 2.2rem;
+}
+header .logo:hover {
+  color: #421cecf5;
+}
+header .navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar li{
+  margin-left: 2.5rem;
+}
+header .navbar ul li a{
+  font-size: 1.57rem;
+  color: #0E2431;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+  color: #011aff;
+  border-bottom: .2rem solid #011aff;
+  padding: .5rem 0;
+}
+/* navbar ends */
+
+/* hamburger icon starts*/
+#menu{
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(24, 2, 63);
+  display: none;
+}
+@media(max-width:768px){
+  #menu{
+      display: block;
+  }
+  header .navbar{
+    position: fixed;
+    top: 6.5rem; right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #0e0f31;
+  }
+  header .navbar ul{
+    flex-flow: column;
+    padding: 1rem;
+  }
+  header .navbar ul li{
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    width: 26rem;
+  }
+  header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover{
+    padding: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #011aff;
+  }
+  .fa-times{
+    transform: rotate(180deg);
+  }
+  header .navbar.nav-toggle{
+    right: 0;
+  }
+}
+/* hamburger icon ends */
+
+/* work section starts */
+.work{
+  /* background: #010124; */
+  background: linear-gradient(to bottom, #010136, #00003a);
+  margin-top: 5rem;
+}
+.work h2{
+  color: #fff;
+  padding: 1rem;
+}
+.work .heading span{
+  color: #421cecf5;
+}
+.work .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin: 2rem;
+}
+.work .box-container .box{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(225, 219, 219, 0.895);
+  position: relative;
+  overflow:hidden;
+  height:30rem;
+  background: #fff;
+  border: #fff;
+}
+.work .box-container .box img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+.work .box-container .box .content{
+  height: 100%;
+  width:100%;
+  position: absolute;
+  top:85%; left:0;
+  background:rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+.work .box-container .box .content .tag{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #421cecf5;
+}
+.work .box-container .box .content .tag h3{
+  font-size: 2rem;
+}
+.work .box-container .box:hover .content{
+  top: 25%;
+}
+.work .desc {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work .desc p{
+  font-size: 1.5rem;
+}
+.work .desc .btns{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+.work .desc .btns .btn{
+  line-height: 0;
+  display: inline;
+  padding: 1.5rem 2.5rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgb(12, 12, 12);
+  margin-right: 2rem;
+}
+.work .desc .btns .btn:hover{
+  background: #310ae0f5;
+}
+
+/* back to home button */
+.backbtn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+.backbtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: .5em;
+  transition: 0.3s;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0px 2px 4px rgba(48, 68, 247, .3);
+  text-align: center;
+  background: #3a6ef7;
+}
+.backbtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: 'Nunito', sans-serif;
+}
+.backbtn .btn i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.backbtn .btn:hover{
+  background: #ffffff;
+  color: #000;
+}
+.backbtn .btn:hover i {
+  transform: translateX(-8px);
+}
+
+/* footer section starts */
+.footer{
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(0, 1, 43);
+}
+.footer .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .box-container .box{
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: .7rem 0;
+  text-transform: none;
+}
+.footer .box-container .box p i{
+  padding-right: 1rem;
+  color: #421cecf5;
+}
+.footer .box-container .box a{
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  padding: .3rem 0;
+  display: block;
+}
+.footer .box-container .box a:hover{
+  color: #421cecf5;
+}
+.footer .box-container .box .share{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: .2s;
+  background: rgb(230, 230, 230);
+  color: #02094b;
+  border: none;
+}
+.footer .box-container .box .share a:hover{
+  background: transparent;
+  transform: scale(0.98);
+  border: .1rem solid rgb(180, 178, 178);
+  color: #421cecf5;
+}
+.footer .credit{
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: .1rem solid #fff3;
+}
+.footer .credit a{
+  color: #421cecf5;
+}
+.footer .fa{
+    color: #E90606;
+    margin: 0 .3rem;
+    font-size: 1.5rem;
+    animation: pound .35s infinite alternate;
+}
+@-webkit-keyframes pound{
+  to{
+    transform: scale(1.1);
+  }
+}
+@keyframes pound{
+  to{
+    transform: scale(1.1);
+}
+}
+@media(max-width:450px){
+  .footer .box-container .box{
+    margin: 2rem;
+  }
+  .footer .box-container .box p{
+    padding: 0.7rem;
+  }
+  .footer .box-container .box .share a{
+    padding: 1.1rem;
+  }
+}
+/* footer section ends */
+
+/* common media queries starts*/
+@media(max-width:450px){
+  html{
+    font-size: 55%;
+  }
+  body{
+    padding-right: 0;
+  }
+  section{
+    padding: 2rem;
+  }
+}
+/* common media queries ends*/
+
+
+/* scroll top starts */
+#scroll-top{
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #421cecf5;
+  color: rgb(235, 233, 239);
+  border-radius: 5rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+#scroll-top.active{
+  top: calc(100% - 12rem);
+}
+/* scroll top ends */
+
+
+
+    .courses {
+      background: linear-gradient(to bottom, #2121e2, #00002c);
+      padding: 50px 0;
+    }
+
+    .courses .heading {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-weight: 700;
+    }
+
+    .courses .heading span {
+      color: #f39c12; /* Golden yellow for highlight */
+    }
+
+    .courses .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+    .courses .box {
+      background: #fff;
+      width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .courses .box:hover {
+      transform: translateY(-12px); /* Slightly more subtle hover effect */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .courses .box .content {
+      padding: 25px;
+      background-color: #f9f9f9; /* Light grey for contrast */
+    }
+
+    .courses .box .content .tag h3 {
+      font-size: 26px;
+      color: #34495e; /* Darker grey for the title */
+      font-family: 'Georgia', serif; /* Elegant serif font */
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .courses .box .content .desc {
+      margin-top: 15px;
+      color: #7f8c8d; /* Soft grey for description */
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .courses .box .content .btns {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 1.8rem;
+    }
+
+.courses .box .content .btns a {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  padding: 10px 20px;
+  border-radius: 100px; /* Rounded corners */
+  background: #a3d8f4; /* Light blue background */
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem; /* Adjusted font size */
+  color: #000; /* Text color */
+  text-decoration: none; /* No underline for the link */
+  position: relative;
+  overflow: hidden;
+}
+
+.courses .box .content .btns a:hover {
+  background: #8ac4d0; /* Slightly darker blue on hover */
+}
+
+.courses .box .content .btns a > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.courses .box .content .btns a:hover svg {
+  transform: translateX(5px); /* Move the SVG icon on hover */
+}
+
+.courses .box .content .btns a:active {
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+/* Add some space for hover effects */
+.courses .box .content .btns a span {
+  display: inline-block;
+  margin-right: 10px; /* Space between text and SVG */
+}
+    .courses .viewall {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .courses .viewall .btn {
+      position: relative;
+      line-height: 0;
+      padding: 1.8rem 3.5rem;
+      border-radius: 0.5em;
+      transition: 0.4s;
+      color: #fff;
+      font-weight: 700;
+      border: 2px solid #fff;
+      background-color: transparent;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .courses .viewall .btn span {
+      font-weight: 600;
+      font-size: 1.8rem;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .courses .viewall .btn i {
+      margin-left: 0.3rem;
+      font-size: 1.6rem;
+      transition: 0.3s;
+    }
+
+    .courses .viewall .btn:hover {
+      background: #fff;
+      color: #2980b9; /* Blue text on hover */
+    }
+
+    .courses .viewall .btn:hover i {
+      transform: translateX(6px); /* Icon hover effect */
+    }
+
+    .unique-modal {
+  display: none;  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay */
+  padding-top: 60px;
+}
+
+.unique-modal.show {
+  display: block;  /* Display the modal when 'show' class is added */
+}
+
+.unique-modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 12px; /* Rounded corners */
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.unique-modal-close {
+  color: #999;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.unique-modal-close:hover,
+.unique-modal-close:focus {
+  color: #e74c3c; /* Red for close button hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Karthik</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+              <li><a href="../index.html#about">About</a></li>
+              <li><a href="../index.html#skills">Skills</a></li>
+              <li><a href="../index.html#education">Education</a></li>
+              <li><a href="/#work">Project</a></li>
+              <li><a href="../index.html#experience">Experience</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+              <li><a href="../index.html#home">Home</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- Courses & Certificates section starts -->
+  <section class="courses" id="courses">
+    <h2 class="heading">
+      <i class="fas fa-laptop-code"></i> Courses & <span>Certificates</span>
+    </h2>
+    
+    <div class="box-container">
+      <!-- Course Box 1 -->
+<!-- Course Box 1 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Databases and SQL for Data Science with Python</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate1')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 10 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Software Engineering Job Simulation</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate10')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Course Box 2 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Python for Data Science, AI & Development</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate2')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 3 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Introduction to Computers and Operating Systems and Security</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate3')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 4 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Data Analysis Using SQL</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate4')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 5 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Crash Course on Python</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate5')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 6 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Introduction to Cloud Computing</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate6')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 7 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Introduction to Web Development with HTML, CSS, JavaScript</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate7')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 11 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Data Analytics and Visualization Job</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate11')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Course Box 8 -->
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Database Structures and Management with MySQL</h3>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate8')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+<div class="box">
+  <div class="content">
+    <div class="tag">
+      <h3>Presentation Skills</h3><br><br>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn" onclick="openModal('certificate9')">
+        <i class="fas fa-eye"></i> View
+      </a>
+    </div>
+  </div>
+</div>
+    </div>
+<!--
+    <div class="viewall">
+      <a href="./certificates/index.html" class="btn">
+        <span>View All Certificates</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>  -->
+  </section>
+
+  <!-- Modals for certificates -->
+<div id="certificate1" class="unique-modal">
+    <div class="unique-modal-content">
+        <span class="unique-modal-close" onclick="closeModal('certificate1')">&times;</span>
+        <embed src="../assests/images/certificates/Databases and SQL for Data Science with Python.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+</div>
+
+<div id="certificate2" class="unique-modal">
+    <div class="unique-modal-content">
+        <span class="unique-modal-close" onclick="closeModal('certificate2')">&times;</span>
+        <embed src="../assests/images/certificates/Python for Data Science, AI & Development.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+</div>
+
+  <div id="certificate3" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate3')">&times;</span>
+      <embed src="../assests/images/certificates/Introduction to Computers and Operating Systems.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+  <div id="certificate4" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate4')">&times;</span>
+      <embed src="../assests/images/certificates/Data Analysis Using SQL.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+  <div id="certificate5" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate5')">&times;</span>
+      <embed src="../assests/images/certificates/Crash Course on Python.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+  <div id="certificate6" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate6')">&times;</span>
+      <embed src="../assests/images/certificates/Introduction to Cloud Computing.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+  <div id="certificate7" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate7')">&times;</span>
+      <embed src="../assests/images/certificates/Introduction to Web Development with HTML, CSS, JavaScript.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+  <div id="certificate8" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate8')">&times;</span>
+      <embed src="../assests/images/certificates/Database Structures and Management with MySQL.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+    <div id="certificate9" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate9')">&times;</span>
+      <embed src="../assests/images/certificates/Presentation Skills.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+      <div id="certificate10" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate10')">&times;</span>
+      <embed src="../assests/images/certificates/Software Engineering Job Simulation.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+        <div id="certificate11" class="unique-modal">
+    <div class="unique-modal-content">
+      <span class="unique-modal-close" onclick="closeModal('certificate11')">&times;</span>
+      <embed src="../assests/images/certificates/Data Analytics and Visualization Job.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+<!-- Courses &  Certificates section ends -->
+
+
+  <div class="backbtn">
+    <a href="../index.html" class="btn">
+      <i class="fas fa-arrow-left"></i>
+      <span>Back to Home</span>
+    </a>
+  </div>
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>Karthik's Portfolio</h3>
+      <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Please wait for a while all major projects will be listed soon. Till then keep visiting. Connect with me over live chat!</p>
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="../index.html#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+      <a href="../index.html#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+      <a href="../index.html#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+      <a href="../index.html#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+      <a href="../index.html#work"><i class="fas fa-chevron-circle-right"></i> projects</a>
+      <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+    </div>
+    <div class="box">
+      <h3>contact info</h3>
+      <p> <i class="fas fa-envelope"></i>karthikgr1908@gmail.com</p>
+      <p> <i class="fas fa-map-marked-alt"></i>Bengaluru, Karnataka -560079</p>
+      <div class="share">
+        <a href="https://www.linkedin.com/in/karthik-g-04b016210/" class="fab fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/Karthikg1908" class="fab fa-github" target="_blank"></a>
+        <a href="mailto:karthikgr1908@gmail.com" class="fas fa-envelope" target="_blank"></a>
+        <a href="https://www.instagram.com/it_s_me.19/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fab fa-instagram" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/karthik-g-04b016210/"> Karthik G</a></h1>
+</section>
+
+<!-- scroll top btn -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assests/js/particles.min.js"></script>
+<script src="./assests/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./assests/js/script.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('#menu').click(function(){
+        $(this).toggleClass('fa-times');
+        $('.navbar').toggleClass('nav-toggle');
+    });
+
+    $(window).on('scroll load',function(){
+        $('#menu').removeClass('fa-times');
+        $('.navbar').removeClass('nav-toggle');
+
+        if(window.scrollY>60){
+            document.querySelector('#scroll-top').classList.add('active');
+        }else{
+            document.querySelector('#scroll-top').classList.remove('active');
+        }
+    });
+});
+
+document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === "visible"){
+        document.title = "Projects | Portfolio  Karthi";
+        $("#favicon").attr("href","/assests/images/profile.jpeg");
+    } else {
+        document.title = "Come Back To Portfolio";
+    }
+});
+
+function openModal(certificateId) {
+    document.getElementById(certificateId).style.display = 'block';
+}
+
+function closeModal(certificateId) {
+    document.getElementById(certificateId).style.display = 'none';
+}
+
+document.onkeydown = function(e) {
+  if(e.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+  function openModal(modalId) {
+    document.getElementById(modalId).classList.add('show');
+  }
+
+  // Function to close the modal
+  function closeModal(modalId) {
+    document.getElementById(modalId).classList.remove('show');
+  }
+</script>
+
+</body>
+</html>
+

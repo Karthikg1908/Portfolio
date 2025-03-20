@@ -1221,46 +1221,214 @@ body {
     margin: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1.6rem;
-    background-color: #f1f1f1;
+    .courses {
+        font-family: 'Times New Roman', serif;
+        padding: 20px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .heading span {
+        color: #007bff;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .courses {
+      background: linear-gradient(to bottom, #2121e2, #00002c);
+      padding: 50px 0;
+    }
+
+    .courses .heading {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-weight: 700;
+    }
+
+    .courses .heading span {
+      color: #f39c12; /* Golden yellow for highlight */
+    }
+
+    .courses .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+    .courses .box {
+      background: #fff;
+      width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .courses .box:hover {
+      transform: translateY(-12px); /* Slightly more subtle hover effect */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .courses .box .content {
+      padding: 25px;
+      background-color: #f9f9f9; /* Light grey for contrast */
+    }
+
+    .courses .box .content .tag h3 {
+      font-size: 26px;
+      color: #34495e; /* Darker grey for the title */
+      font-family: 'Georgia', serif; /* Elegant serif font */
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .courses .box .content .desc {
+      margin-top: 15px;
+      color: #7f8c8d; /* Soft grey for description */
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .courses .box .content .btns {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 1.8rem;
+    }
+
+.courses .box .content .btns a {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  padding: 10px 20px;
+  border-radius: 100px; /* Rounded corners */
+  background: #a3d8f4; /* Light blue background */
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem; /* Adjusted font size */
+  color: #000; /* Text color */
+  text-decoration: none; /* No underline for the link */
+  position: relative;
+  overflow: hidden;
 }
 
-th {
-    padding: 15px;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.8rem;
+.courses .box .content .btns a:hover {
+  background: #8ac4d0; /* Slightly darker blue on hover */
 }
 
-td {
-    padding: 15px;
-    background-color: #f8f9fa;
-    color: #333;
-    font-size: 1.5rem;
-    text-align: center;
-    transition: background-color 0.3s;
-    border-bottom: 1px solid #ccc;
+.courses .box .content .btns a > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-td a {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+.courses .box .content .btns a:hover svg {
+  transform: translateX(5px); /* Move the SVG icon on hover */
 }
 
-td a:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+.courses .box .content .btns a:active {
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
 }
+
+/* Add some space for hover effects */
+.courses .box .content .btns a span {
+  display: inline-block;
+  margin-right: 10px; /* Space between text and SVG */
+}
+
+
+
+    .courses .viewall {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .courses .viewall .btn {
+      position: relative;
+      line-height: 0;
+      padding: 1.8rem 3.5rem;
+      border-radius: 0.5em;
+      transition: 0.4s;
+      color: #fff;
+      font-weight: 700;
+      border: 2px solid #fff;
+      background-color: transparent;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .courses .viewall .btn span {
+      font-weight: 600;
+      font-size: 1.8rem;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .courses .viewall .btn i {
+      margin-left: 0.3rem;
+      font-size: 1.6rem;
+      transition: 0.3s;
+    }
+
+    .courses .viewall .btn:hover {
+      background: #fff;
+      color: #2980b9; /* Blue text on hover */
+    }
+
+    .courses .viewall .btn:hover i {
+      transform: translateX(6px); /* Icon hover effect */
+    }
+
+    /* Modal Styles */
+    .unique-modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay */
+      padding-top: 60px;
+    }
+
+    .unique-modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 30px;
+      border-radius: 12px; /* Rounded corners */
+      border: 1px solid #ddd;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .unique-modal-close {
+      color: #999;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .unique-modal-close:hover,
+    .unique-modal-close:focus {
+      color: #e74c3c; /* Red for close button hover */
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
 
